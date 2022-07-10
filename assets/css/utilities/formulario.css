@@ -17,6 +17,8 @@
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="tel"],
+.form input[type="number"],
+.form select,
 .form textarea {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   background: var(--cor-1);
@@ -37,11 +39,32 @@
   box-shadow: 0 0 0 2px #fea;
 }
 
+.checkbox-termos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.checkbox-termos a {
+  text-decoration: underline;
+}
+.checkbox-termos input {
+  width: 32px;
+  height: 32px;
+  border: var(--cor-4);
+}
+
 @media (max-width: 600px) {
   .form {
     grid-template-columns: 1fr;
   }
   .form .col-2 {
     grid-column: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .checkbox-termos {
+    display: block;
+    font-size: 12px;
   }
 }
