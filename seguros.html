@@ -9,10 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" href="./assets/css/style.css" as="style">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/css/style.min.css" as="style">
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <script src="./assets/plugins/simple-anime.js" defer></script>
   <script src="./assets/js/script.js" defer></script>
   <title>Seguros | BikCraft</title>
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body id="seguros">
@@ -36,7 +39,7 @@
       </div>
     </div>
     <div class="seguros container">
-      <div class="seguros-item">
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199<span class="font-1-xs cor-6">mensal</span></span>
 
@@ -48,7 +51,7 @@
         </ul>
         <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299<span class="font-1-xs cor-6">mensal</span></span>
 
